@@ -1,7 +1,7 @@
 /*
   This is a simple Java program.
 
-  Call thia file Example.java
+  Call this file Example.java
 */
 class Example {
   // A Java program begins with a call to main().

@@ -1,7 +1,7 @@
 /*
   This demonstrates a variable.
 
-  Call thia file Example2.java
+  Call this file Example2.java
 */
 class Example2 {
   public static void main(String args[]) {

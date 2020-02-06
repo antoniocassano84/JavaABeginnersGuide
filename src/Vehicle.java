@@ -1,4 +1,4 @@
-// A program that uses the Vehicle class.
+// A Vehicle class
 
 class Vehicle {
   int passengers; // number of passengers

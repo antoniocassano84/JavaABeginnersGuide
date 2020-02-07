@@ -1,8 +1,10 @@
 // Use a return value.
-class RetMeth {
+class CompFuel {
   public static void main(String args[]) {
     Vehicle minivan = new Vehicle();
     Vehicle sportscar = new Vehicle();
+    double gallons;
+    int dist = 252;
 
     // assign values to fields in minivan
     minivan.passengers = 7;
@@ -14,11 +16,15 @@ class RetMeth {
     sportscar.fuelcap = 14;
     sportscar.mpg = 12;
 
-    System.out.println("Minivan can carry " + minivan.passengers +
-            " with range of " + minivan.range() + " Miles");
+    gallons = minivan.fuelneeded(dist);
 
-    System.out.println("Sportscar can carry " + sportscar.passengers +
-            " with range of " + sportscar.range() + " Miles");
+    System.out.println("To go  " + dist + " miles minivan needs " +
+                       gallons + " gallons of fuel.");
+
+    gallons = sportscar.fuelneeded(dist);
+
+    System.out.println("To go  " + dist + " miles sportscar needs " +
+            gallons + " gallons of fuel.");
 
   }
 }

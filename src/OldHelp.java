@@ -3,7 +3,7 @@
 
    A simple help system.
 */
-class Help {
+class OldHelp {
   public static void main(String args[])
     throws java.io.IOException{
     char choice;

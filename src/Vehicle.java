@@ -5,6 +5,15 @@ class Vehicle {
   int fuelcap;    // fuel capacity in gallons
   int mpg;        // fuel consumption in miles per gallons
 
+  Vehicle() {}
+
+  // This is a constructor for Vehicle
+  Vehicle(int p, int f, int m) {
+    passengers = p;
+    fuelcap = f;
+    mpg = m;
+  }
+
   // Return the range.
   int range() {
     return fuelcap * mpg;

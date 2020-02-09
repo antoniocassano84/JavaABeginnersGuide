@@ -8,9 +8,7 @@ class Bubble {
     int nums[] = { 99, -10, 100123, 18, -978, 5623, 463, -9, 287, 49 };
     int a, b, t, n;
 
-    //display original array
-    System.out.print("Original array is: ");
-    displayArray(nums);
+    displayArray(nums, "Original array is: ");
 
     // This is the Bubble sort
     for(a=1; a < nums.length; a++) // from index 1 to 8
@@ -20,15 +18,14 @@ class Bubble {
           t = nums[b-1];
           nums[b-1] = nums[b];
           nums[b] = t;
-          displayArray(nums);
+          displayArray(nums, null);
         }
       }
-    // display sorted array
-    System.out.print("Sorted array is:");
-    displayArray(nums);
+    displayArray(nums, "Sorted array is:");
   }
 
-  private static void displayArray(int[] nums) {
+  private static void displayArray(int[] nums, String msg) {
+    System.out.print(msg);
     for(int i=0; i < nums.length; i++)
       System.out.print(" " + nums[i]);
     System.out.println();

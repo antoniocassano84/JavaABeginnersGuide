@@ -11,6 +11,8 @@ class Bubble {
 
     // This is the Bubble sort
     bubbleSort(nums);
+     
+    displayArray(nums, "Sorted array is:");
 
   }
 
@@ -30,8 +32,8 @@ class Bubble {
           nums[b-1] = nums[b];
           nums[b] = t;
           displayArray(nums, null);
-        }
-      }
-    displayArray(nums, "Sorted array is:");
+    }
+  }
+
   }
 }

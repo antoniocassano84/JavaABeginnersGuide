@@ -1,18 +1,15 @@
-/*
-   Try This 5-2
-
-   A queue class for characters.
-*/
+// An improved queue class for characters.
 class Queue {
-  char q[]; // this array holds the queue
-  int putloc, getloc; // the put and get indices
+  // these members are now private
+  private char q[]; // this array holds the queue
+  private int putloc, getloc; // the put and get indices
 
   public Queue(int size) {
     q = new char[size]; // allocate memory for queue
     putloc = getloc = 0;
   }
 
-  // put a character into the queue
+  // Put a character into the queue.
   void put(char ch) {
     if(putloc==q.length) {
       System.out.println(" - Queue is full.");
@@ -21,7 +18,7 @@ class Queue {
     q[putloc++] = ch;
   }
 
-  // get a character from the queue
+  // Get a character from the queue.
   char get() {
     if(getloc == putloc) {
       System.out.println(" - Queue is empty.");
@@ -59,7 +56,7 @@ class QDemo {
     // Now, use smallQ to generate some errors
     for(i=0; i < 5; i++) {
       System.out.print("Attempting to store " +
-                       (char) ('Z' - i));
+              (char) ('Z' - i));
 
       smallQ.put((char) ('Z' - i));
 
@@ -76,3 +73,4 @@ class QDemo {
     }
   }
 }
+

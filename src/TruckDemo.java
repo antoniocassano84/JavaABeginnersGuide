@@ -1,3 +1,7 @@
+// Try This 7-1
+//
+// Build a subclass of vehicle for trucks.
+
 // Extend Vehicle to create a Truck specialisation.
 class Truck extends Vehicle {
   private int cargocap; // cargo capacity in pounds
